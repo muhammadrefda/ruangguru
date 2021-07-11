@@ -15,11 +15,11 @@ class AdminSeeder extends Seeder
     public function run()
     {
         User::create([
-            'userName' => 'Admin',
-            'userEmail' => 'admin@ruangguru.com',
+            'name' => 'Admin',
+            'email' => 'admin@ruangguru.com',
             'email_verified_at' => now(),
             'password' => bcrypt('secret'),
-            'userPhoneNumber' => '021727666'
+            'phoneNumber' => '02178666',
         ]);
     }
 }
